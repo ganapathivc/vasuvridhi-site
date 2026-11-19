@@ -177,3 +177,74 @@ footer.site li{margin:7px 0}
 .caution strong{display:block;margin-bottom:4px;color:#3d3100}
 .pager{display:flex;justify-content:space-between;gap:16px;border-top:1px solid var(--line);margin-top:28px;padding-top:18px;font-weight:600}
 .pager a{text-decoration:none;max-width:48%}
+
+/* ===== Dark-blue theme (overrides) ===== */
+:root{
+  --navy:#0b1f3a; --navy-2:#132d54; --navy-3:#071528;
+  --on-dark:#e8eef8; --on-dark-2:#b7c6de;
+  --gold:#f2b84b; --gold-dark:#d99a22;
+  --brand:#1e4fa3; --brand-dark:#163d80; --brand-soft:#e7eefb;
+  --ink:#0f2240;
+  --t-mint:#bfe3d9; --t-coral:#f9cdb8; --t-sky:#b9d3f7; --t-sand:#f7d98f; --t-lilac:#d6d0f5;
+}
+h1,h2,h3,h4{color:var(--ink)}
+.reg-strip{background:var(--navy-3);border-bottom:1px solid #1c3560;color:var(--on-dark-2)}
+.reg-strip a{color:var(--gold)}
+header.site{background:var(--navy);border-bottom:1px solid #1c3560}
+.brand-name{color:#fff}
+.brand-name small{color:var(--on-dark-2)}
+nav.links a{color:var(--on-dark)}
+nav.links a:hover{background:rgba(255,255,255,.08);color:#fff}
+nav.links a[aria-current=page]{background:var(--gold);color:var(--navy)}
+.menu-btn{background:transparent;color:#fff;border-color:#2a4878}
+@media (max-width:880px){nav.links{background:var(--navy);border-bottom:1px solid #1c3560}}
+
+/* Hero: dark band */
+.hero{background:linear-gradient(160deg,var(--navy) 0%,var(--navy-2) 100%);padding:70px 0 60px}
+.hero h1{color:#fff}
+.hero h1 .sub{color:var(--on-dark-2)}
+.hero .lead{color:var(--on-dark)}
+.hero-points{color:#fff}
+.hero-points li::before{color:var(--gold)}
+.hero .btn-primary{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.hero .btn-primary:hover{background:var(--gold-dark);border-color:var(--gold-dark);color:var(--navy)}
+.hero .btn-ghost{background:transparent;color:#fff;border-color:#5b77a6}
+.hero .btn-ghost:hover{background:rgba(255,255,255,.08)}
+.hero-art{background:#eaf1fc;border-radius:22px;padding:18px}
+
+/* Page title bands (full-bleed dark) */
+.page-head{background:var(--navy);box-shadow:0 0 0 100vmax var(--navy);clip-path:inset(0 -100vmax);padding:46px 24px 34px;margin-bottom:34px}
+.page-head h1{color:#fff}
+.page-head .lead,.page-head p{color:var(--on-dark)}
+.page-head .eyebrow{color:var(--gold)}
+.page-head .updated{color:var(--on-dark-2)}
+.page-head .notice{background:rgba(255,255,255,.07);border-color:#33507f;color:var(--on-dark)}
+.page-head .notice a{color:var(--gold)}
+
+/* Section headings on light areas */
+section > .wrap > h2, .section-head h2{color:var(--navy);border-left:5px solid var(--gold);padding-left:12px}
+.section-soft{background:#eef3fb}
+.eyebrow{color:var(--brand)}
+.module .mnum{color:var(--brand)}
+.btn-primary{background:var(--brand);border-color:var(--brand)}
+.btn-primary:hover{background:var(--brand-dark);border-color:var(--brand-dark)}
+.btn-ghost{color:var(--brand);border-color:var(--brand)}
+
+/* Tables: dark header row, light text */
+th{background:var(--navy-2);color:#fff}
+table{border-color:#d6deeb}
+
+/* Article headings */
+.prose h2{color:var(--navy)}
+.takeaways{background:var(--navy);color:var(--on-dark)}
+.takeaways h3{color:var(--gold)}
+.takeaways li{color:var(--on-dark)}
+.read aside a[aria-current=page]{color:var(--brand)}
+
+/* Footer: dark */
+footer.site{background:var(--navy);border-top:none;color:var(--on-dark-2)}
+footer.site h4{color:#fff}
+footer.site a{color:var(--on-dark)}
+footer.site a:hover{color:var(--gold)}
+.foot-legal{border-top-color:#22406d;color:var(--on-dark-2)}
+.foot-legal a{color:var(--on-dark)}
